@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register Form</title>
+    <title>Register</title>
 </head>
 <body>
-    <h1>Register Form</h1>
-    
+    <h1>Register</h1>
+
     <form action="https://script.google.com/macros/s/AKfycby2D1pZFikTV3d0MLipi1qA_bmtNksqyBz5jgJoDtNU1PfJTPsRhl37V375ntGjuxxTyg/exec" method="POST">
         <label for="Name">Name:</label><br>
         <input type="text" id="Name" name="Name" required><br><br>
@@ -18,7 +18,12 @@
         <label for="Email">Email:</label><br>
         <input type="email" id="Email" name="Email" required><br><br>
         
-        <button type="submit">Submit</button>
+        <input type="submit" value="Submit">
     </form>
+
+    <script>
+        document.getElementById("registerForm").addEventListener("submit", function(event) {
+        });
+    </script>
 </body>
 </html>
